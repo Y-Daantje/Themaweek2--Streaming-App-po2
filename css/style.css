@@ -43,7 +43,7 @@ header>ul li:hover {
 .container {
     border: 1px solid #fff;
     height: 100%;
-    width: 50%;
+    width: 70%;
     height: 100%;
     margin: auto;
 }
@@ -91,6 +91,11 @@ header>ul li:hover {
     border: 2px solid rgb(255, 128, 0);
     transition: transform 0.2s;
     border-radius: 5px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
 }
 
 img {

@@ -1,0 +1,180 @@
+:root {
+    --background-color: #97F1CA;
+    --border-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    min-width: 0;
+    cursor: default;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    border-bottom: 2px solid white;
+}
+
+header a {
+    color: #fff;
+}
+
+header ul li {
+    position: relative;
+    left: 800px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header>ul li:hover {
+    background-color: var(--background-color);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.container {
+    border: 1px solid #fff;
+    height: 100%;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.release {
+    position: relative;
+    background-color: var(--background-color);
+    padding: 10px;
+    color: black;
+}
+
+.release h3 {
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.release h3:nth-child(2) {
+    color: black;
+}
+
+.release h3:nth-child(3) {
+    color: black;
+}
+
+.release h3:hover {
+    color: #fff;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    gap: 50px;
+}
+
+.item {
+    position: relative;
+    max-width: 400px;
+    height: 500px;
+    border: 2px solid rgb(255, 128, 0);
+    transition: transform 0.2s;
+    border-radius: 5px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 5px;
+}
+
+img:hover {
+    border-radius: 15px;
+}
+
+.item:hover {
+    border-radius: 15px;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.item p {
+    font-size: large;
+    text-align: center;
+    margin: 5px;
+}
+
+.item .name {
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+footer {
+    /* text-align: center; */
+    padding: 50px;
+}
+
+footer a {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) and (min-width: 360px) {
+
+    .start {
+        width: 100%;
+    }
+
+    .fa-arrow-right-to-bracket {
+        position: relative;
+        top: 22px;
+        left: 20px;
+    }
+
+    .start header nav li {
+        display: none;
+    }
+
+    input {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    .fa-search {
+        top: 22px;
+        left: -10px;
+    }
+
+    .items {
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    .item {
+        max-width: 130px;
+        height: 180px;
+    }
+}

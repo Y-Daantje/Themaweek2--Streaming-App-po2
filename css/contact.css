@@ -1,0 +1,96 @@
+:root {
+    --textcolor: rgb(219, 190, 22);
+    /*het variabel voor het colors*/
+}
+
+body {
+    background-color: rgb(87, 86, 86);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/**/
+button {
+    margin-top: 30px;
+    position: relative;
+    left: 90%;
+    padding: 1%;
+    border: none;
+}
+
+.btn {
+    margin-right: 50px;
+    padding-left: 30px;
+    padding-right: 43px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    cursor: pointer;
+    background-color:rgb(87, 86, 86);
+
+}
+
+.btn span {
+    position: relative;
+    transition: 0.5s;
+    font-size: xx-large;
+}
+
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 2s;
+}
+
+.btn:hover span {
+    padding-right: 20px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+hr {
+    border: none;
+    border-top: 5px solid #333;
+    border-radius: 100%;
+}
+
+.contfeed {
+    margin-left: 150px;
+    font-size: 60px;
+    color: var(--textcolor);
+}
+
+.cont {
+    margin-left: 100px;
+    color: #97F1CA;
+    font-size: 32px;
+}
+
+div>p {
+    color: var(--textcolor);
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.info {
+    margin-left: 100px;
+}
+
+.info1 {
+    margin-left: 100px;
+    font-weight: 500;
+    font-size: large;
+    color: whitesmoke;
+}
+
+
+a {
+    font-weight: 550;
+    color: whitesmoke;
+}
