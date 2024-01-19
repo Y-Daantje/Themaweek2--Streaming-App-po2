@@ -6,7 +6,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
     cursor: default;
 }
@@ -108,7 +108,7 @@ img:hover {
 
 .item:hover {
     border-radius: 15px;
-    transform: scale(1.05);
+    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -130,15 +130,18 @@ img:hover {
     cursor: pointer;
 }
 
-footer {
-    /* text-align: center; */
-    padding: 50px;
+video {
+    margin: auto;
+    display: block;
 }
 
-footer a {
-    font-size: 12px;
-    cursor: pointer;
+footer {
+    padding: 50px;
+    /* text-align: center; */
+    text-align: center;
 }
+
+
 
 @media screen and (max-width: 700px) and (min-width: 360px) {
 
@@ -154,17 +157,6 @@ footer a {
 
     .start header nav li {
         display: none;
-    }
-
-    input {
-        position: relative;
-        top: 20px;
-        left: 20px;
-    }
-
-    .fa-search {
-        top: 22px;
-        left: -10px;
     }
 
     .items {
